@@ -1,5 +1,5 @@
 #solution 1 
-def count_covered_lines(lines, pos_):
+def solution1(lines, pos_):
     covered_pos = set(tuple(pos) for pos in pos_)
 
     def cal_points(a, b, c, d):
@@ -86,4 +86,24 @@ def solution2(a, b, c, d):
        covered.add(points[i])
 
     return list(covered)
+
+
+
+#test1
+
+lines = [[1, 1, 2, 2], [2, 1, 0, 3]]
+pos = [[0, 1],[1, 1], [2, 2]]
+
+print(solution1(lines, pos))
+
+#test2
+
+x1, y1, x2, y2 = 1, 1, 6, 4
+
+print(solution2(x1, y1, x2, y2))
+
+
+
+
+
 
